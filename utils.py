@@ -6,7 +6,7 @@ def timefunc(func):
         start = timer()
         results = func(*args, **kwargs)
         end = timer()
-        message = '{} took {} seconds'.format(func.__name, end - start)
+        message = '{} took {} seconds'.format(func.__name__, end - start)
         print(message)
         return results
     return inner

@@ -17,7 +17,6 @@ def main():
     # second example how to create s socket connection
     result = s.connect_ex((host, port))
     print('Result is {}'.format(result))   # will show '0' if connection was successfull
-
     s.close()
 
 
