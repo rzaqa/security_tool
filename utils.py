@@ -12,5 +12,8 @@ def timefunc(func):
     return inner
 
 
+def mac_addr(bytestring):
+    return ":".join("{:0.2x}".format(piece) for piece in bytestring).upper()
+
   
 
